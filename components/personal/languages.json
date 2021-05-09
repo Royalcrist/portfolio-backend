@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_languages_languages",
+  "info": {
+    "name": "languages",
+    "icon": "globe",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "richtext"
+    }
+  }
+}

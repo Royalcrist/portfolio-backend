@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_pages_home_project_sections",
+  "info": {
+    "name": "home_project_section",
+    "icon": "window-restore",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "auto_scroll": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

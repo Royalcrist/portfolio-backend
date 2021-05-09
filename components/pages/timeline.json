@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_time_timelines",
+  "info": {
+    "name": "timeline",
+    "icon": "code-branch",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": false
+    },
+    "start": {
+      "type": "date",
+      "required": true
+    },
+    "end": {
+      "type": "date"
+    }
+  }
+}
