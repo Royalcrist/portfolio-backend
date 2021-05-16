@@ -674,7 +674,7 @@
               }
             }
           },
-          "homepage_image": {
+          "homepageImage": {
             "required": [
               "id",
               "name",
@@ -763,7 +763,7 @@
               }
             }
           },
-          "homepage_image_sm": {
+          "homepageImageSm": {
             "required": [
               "id",
               "name",
@@ -838,7 +838,7 @@
             "type": "boolean",
             "default": false
           },
-          "comming_soon": {
+          "commingSoon": {
             "type": "boolean",
             "default": false
           },
@@ -874,13 +874,13 @@
                     "type": "string"
                   }
                 },
-                "homepage_image": {
+                "homepageImage": {
                   "type": "string"
                 },
                 "color": {
                   "type": "string"
                 },
-                "homepage_image_sm": {
+                "homepageImageSm": {
                   "type": "string"
                 },
                 "active": {
@@ -889,7 +889,7 @@
                 "highlight": {
                   "type": "boolean"
                 },
-                "comming_soon": {
+                "commingSoon": {
                   "type": "boolean"
                 },
                 "localizations": {
@@ -952,7 +952,7 @@
             "type": "boolean",
             "default": false
           },
-          "comming_soon": {
+          "commingSoon": {
             "type": "boolean",
             "default": false
           },

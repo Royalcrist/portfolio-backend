@@ -337,7 +337,7 @@
               }
             }
           },
-          "homepage_image": {
+          "image": {
             "required": [
               "id",
               "name",
@@ -792,7 +792,7 @@
               }
             }
           },
-          "social_media": {
+          "socialMedia": {
             "required": [
               "id",
               "name"
@@ -839,7 +839,7 @@
                 "languages": {
                   "type": "component"
                 },
-                "homepage_image": {
+                "image": {
                   "type": "string"
                 },
                 "cover": {
@@ -857,7 +857,7 @@
                 "color": {
                   "type": "string"
                 },
-                "social_media": {
+                "socialMedia": {
                   "type": "string"
                 },
                 "title": {
@@ -1218,7 +1218,7 @@
           "color": {
             "type": "string"
           },
-          "social_media": {
+          "socialMedia": {
             "type": "string"
           },
           "title": {

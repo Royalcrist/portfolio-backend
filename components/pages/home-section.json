@@ -1,7 +1,7 @@
 {
   "collectionName": "components_pages_home_sections",
   "info": {
-    "name": "home_section",
+    "name": "home section",
     "icon": "clinic-medical",
     "description": ""
   },
@@ -32,15 +32,15 @@
     "color": {
       "model": "colors"
     },
-    "contact_links": {
+    "contactLinks": {
       "type": "component",
       "repeatable": true,
       "component": "pages.contact-links"
     },
-    "upper_title": {
+    "upperTitle": {
       "type": "string"
     },
-    "image_sm": {
+    "imageSm": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -51,6 +51,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "actionText": {
+      "type": "string",
+      "required": false
     }
   }
 }

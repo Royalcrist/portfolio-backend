@@ -1,8 +1,9 @@
 {
   "collectionName": "components_pages_contact_links",
   "info": {
-    "name": "contact_links",
-    "icon": "bars"
+    "name": "Contact link",
+    "icon": "bars",
+    "description": ""
   },
   "options": {},
   "attributes": {

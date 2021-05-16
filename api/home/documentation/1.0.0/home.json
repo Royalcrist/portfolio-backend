@@ -432,7 +432,7 @@
                         }
                       }
                     },
-                    "contact_links": {
+                    "contactLinks": {
                       "type": "array",
                       "items": {
                         "type": "object",
@@ -519,10 +519,10 @@
                         }
                       }
                     },
-                    "upper_title": {
+                    "upperTitle": {
                       "type": "string"
                     },
-                    "image_sm": {
+                    "imageSm": {
                       "required": [
                         "id",
                         "name",
@@ -588,6 +588,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "actionText": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -778,7 +781,7 @@
                         }
                       }
                     },
-                    "contact_links": {
+                    "contactLinks": {
                       "type": "array",
                       "items": {
                         "type": "object",
@@ -865,10 +868,10 @@
                         }
                       }
                     },
-                    "upper_title": {
+                    "upperTitle": {
                       "type": "string"
                     },
-                    "image_sm": {
+                    "imageSm": {
                       "required": [
                         "id",
                         "name",
@@ -934,6 +937,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "actionText": {
+                      "type": "string"
                     }
                   },
                   "required": [

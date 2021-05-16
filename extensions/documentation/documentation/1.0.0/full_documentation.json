@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/09/2021 8:07:32 PM"
+    "x-generation-date": "05/16/2021 8:04:59 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4590,7 +4590,7 @@
                         }
                       }
                     },
-                    "contact_links": {
+                    "contactLinks": {
                       "type": "array",
                       "items": {
                         "type": "object",
@@ -4677,10 +4677,10 @@
                         }
                       }
                     },
-                    "upper_title": {
+                    "upperTitle": {
                       "type": "string"
                     },
-                    "image_sm": {
+                    "imageSm": {
                       "required": [
                         "id",
                         "name",
@@ -4746,6 +4746,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "actionText": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -4936,7 +4939,7 @@
                         }
                       }
                     },
-                    "contact_links": {
+                    "contactLinks": {
                       "type": "array",
                       "items": {
                         "type": "object",
@@ -5023,10 +5026,10 @@
                         }
                       }
                     },
-                    "upper_title": {
+                    "upperTitle": {
                       "type": "string"
                     },
-                    "image_sm": {
+                    "imageSm": {
                       "required": [
                         "id",
                         "name",
@@ -5092,6 +5095,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "actionText": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -5171,7 +5177,7 @@
               }
             }
           },
-          "homepage_image": {
+          "image": {
             "required": [
               "id",
               "name",
@@ -5626,7 +5632,7 @@
               }
             }
           },
-          "social_media": {
+          "socialMedia": {
             "required": [
               "id",
               "name"
@@ -5673,7 +5679,7 @@
                 "languages": {
                   "type": "component"
                 },
-                "homepage_image": {
+                "image": {
                   "type": "string"
                 },
                 "cover": {
@@ -5691,7 +5697,7 @@
                 "color": {
                   "type": "string"
                 },
-                "social_media": {
+                "socialMedia": {
                   "type": "string"
                 },
                 "title": {
@@ -6052,7 +6058,7 @@
           "color": {
             "type": "string"
           },
-          "social_media": {
+          "socialMedia": {
             "type": "string"
           },
           "title": {
@@ -6239,7 +6245,7 @@
               }
             }
           },
-          "homepage_image": {
+          "homepageImage": {
             "required": [
               "id",
               "name",
@@ -6328,7 +6334,7 @@
               }
             }
           },
-          "homepage_image_sm": {
+          "homepageImageSm": {
             "required": [
               "id",
               "name",
@@ -6403,7 +6409,7 @@
             "type": "boolean",
             "default": false
           },
-          "comming_soon": {
+          "commingSoon": {
             "type": "boolean",
             "default": false
           },
@@ -6439,13 +6445,13 @@
                     "type": "string"
                   }
                 },
-                "homepage_image": {
+                "homepageImage": {
                   "type": "string"
                 },
                 "color": {
                   "type": "string"
                 },
-                "homepage_image_sm": {
+                "homepageImageSm": {
                   "type": "string"
                 },
                 "active": {
@@ -6454,7 +6460,7 @@
                 "highlight": {
                   "type": "boolean"
                 },
-                "comming_soon": {
+                "commingSoon": {
                   "type": "boolean"
                 },
                 "localizations": {
@@ -6517,7 +6523,7 @@
             "type": "boolean",
             "default": false
           },
-          "comming_soon": {
+          "commingSoon": {
             "type": "boolean",
             "default": false
           },

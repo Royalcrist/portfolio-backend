@@ -79,7 +79,7 @@
         }
       }
     },
-    "homepage_image": {
+    "homepageImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -97,7 +97,7 @@
     "color": {
       "model": "colors"
     },
-    "homepage_image_sm": {
+    "homepageImageSm": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -129,7 +129,7 @@
       "type": "boolean",
       "default": false
     },
-    "comming_soon": {
+    "commingSoon": {
       "pluginOptions": {
         "i18n": {
           "localized": true
