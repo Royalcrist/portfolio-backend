@@ -40,21 +40,8 @@
     "upperTitle": {
       "type": "string"
     },
-    "imageSm": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
-    "actionText": {
-      "type": "string",
-      "required": false
+    "action_text": {
+      "model": "action-text"
     }
   }
 }
