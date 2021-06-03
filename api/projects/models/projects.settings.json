@@ -117,6 +117,18 @@
     },
     "action_text": {
       "model": "action-text"
+    },
+    "comming_soon_text": {
+      "model": "action-text"
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
