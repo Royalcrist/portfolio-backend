@@ -313,165 +313,13 @@
       "Profile": {
         "required": [
           "id",
-          "section",
-          "title"
+          "sections"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "languages": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "language": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "image": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "cover": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "section": {
+          "sections": {
             "type": "array",
             "items": {
               "oneOf": [
@@ -481,8 +329,8 @@
                       "type": "string",
                       "enum": [
                         "pages.paragraph",
-                        "pages.timeline",
-                        "pages.skills"
+                        "pages.skills",
+                        "pages.timeline"
                       ]
                     },
                     "id": {
@@ -576,42 +424,8 @@
                       "type": "string",
                       "enum": [
                         "pages.paragraph",
-                        "pages.timeline",
-                        "pages.skills"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "title": {
-                      "type": "string"
-                    },
-                    "description": {
-                      "type": "string"
-                    },
-                    "start": {
-                      "type": "string",
-                      "format": "date"
-                    },
-                    "end": {
-                      "type": "string",
-                      "format": "date"
-                    }
-                  },
-                  "required": [
-                    "id",
-                    "title",
-                    "start"
-                  ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "pages.paragraph",
-                        "pages.timeline",
-                        "pages.skills"
+                        "pages.skills",
+                        "pages.timeline"
                       ]
                     },
                     "id": {
@@ -760,11 +574,58 @@
                     "name",
                     "icon"
                   ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "pages.paragraph",
+                        "pages.skills",
+                        "pages.timeline"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "title",
+                          "date"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "date": {
+                            "type": "string",
+                            "format": "date"
+                          },
+                          "description": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
                 }
               ]
             }
           },
-          "role": {
+          "title": {
+            "type": "string"
+          },
+          "subtitle": {
             "type": "string"
           },
           "description": {
@@ -792,10 +653,15 @@
               }
             }
           },
-          "socialMedia": {
+          "images": {
             "required": [
               "id",
-              "name"
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
             ],
             "properties": {
               "id": {
@@ -804,13 +670,46 @@
               "name": {
                 "type": "string"
               },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
               "url": {
                 "type": "string"
               },
-              "icon": {
+              "previewUrl": {
                 "type": "string"
               },
-              "published_at": {
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
                 "type": "string"
               },
               "created_by": {
@@ -821,34 +720,24 @@
               }
             }
           },
-          "title": {
-            "type": "string"
-          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "section",
-                "title"
+                "sections"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "languages": {
-                  "type": "component"
-                },
-                "image": {
-                  "type": "string"
-                },
-                "cover": {
-                  "type": "string"
-                },
-                "section": {
+                "sections": {
                   "type": "dynamiczone"
                 },
-                "role": {
+                "title": {
+                  "type": "string"
+                },
+                "subtitle": {
                   "type": "string"
                 },
                 "description": {
@@ -857,10 +746,7 @@
                 "color": {
                   "type": "string"
                 },
-                "socialMedia": {
-                  "type": "string"
-                },
-                "title": {
+                "images": {
                   "type": "string"
                 },
                 "localizations": {
@@ -895,28 +781,10 @@
       },
       "NewProfile": {
         "required": [
-          "section",
-          "title"
+          "sections"
         ],
         "properties": {
-          "languages": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "language": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "section": {
+          "sections": {
             "type": "array",
             "items": {
               "oneOf": [
@@ -926,8 +794,8 @@
                       "type": "string",
                       "enum": [
                         "pages.paragraph",
-                        "pages.timeline",
-                        "pages.skills"
+                        "pages.skills",
+                        "pages.timeline"
                       ]
                     },
                     "id": {
@@ -1021,42 +889,8 @@
                       "type": "string",
                       "enum": [
                         "pages.paragraph",
-                        "pages.timeline",
-                        "pages.skills"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "title": {
-                      "type": "string"
-                    },
-                    "description": {
-                      "type": "string"
-                    },
-                    "start": {
-                      "type": "string",
-                      "format": "date"
-                    },
-                    "end": {
-                      "type": "string",
-                      "format": "date"
-                    }
-                  },
-                  "required": [
-                    "id",
-                    "title",
-                    "start"
-                  ]
-                },
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "pages.paragraph",
-                        "pages.timeline",
-                        "pages.skills"
+                        "pages.skills",
+                        "pages.timeline"
                       ]
                     },
                     "id": {
@@ -1205,23 +1039,64 @@
                     "name",
                     "icon"
                   ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "pages.paragraph",
+                        "pages.skills",
+                        "pages.timeline"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "title",
+                          "date"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "date": {
+                            "type": "string",
+                            "format": "date"
+                          },
+                          "description": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
                 }
               ]
             }
           },
-          "role": {
+          "title": {
+            "type": "string"
+          },
+          "subtitle": {
             "type": "string"
           },
           "description": {
             "type": "string"
           },
           "color": {
-            "type": "string"
-          },
-          "socialMedia": {
-            "type": "string"
-          },
-          "title": {
             "type": "string"
           },
           "localizations": {

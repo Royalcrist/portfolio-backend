@@ -552,6 +552,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "link_id": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -862,6 +865,9 @@
                           "type": "string"
                         }
                       }
+                    },
+                    "link_id": {
+                      "type": "string"
                     }
                   },
                   "required": [

@@ -1,26 +1,15 @@
 {
-  "collectionName": "components_time_timelines",
+  "collectionName": "components_pages_timelines",
   "info": {
     "name": "timeline",
-    "icon": "code-branch",
-    "description": ""
+    "icon": "code-branch"
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "richtext",
-      "required": false
-    },
-    "start": {
-      "type": "date",
-      "required": true
-    },
-    "end": {
-      "type": "date"
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages.timeline-item"
     }
   }
 }

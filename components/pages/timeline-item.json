@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_pages_timeline_items",
+  "info": {
+    "name": "timeline item",
+    "icon": "calendar-minus"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "required": true,
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
