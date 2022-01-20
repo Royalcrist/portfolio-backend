@@ -9,22 +9,6 @@
   "attributes": {
     "paragraph": {
       "type": "richtext"
-    },
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "images": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
     }
   }
 }
