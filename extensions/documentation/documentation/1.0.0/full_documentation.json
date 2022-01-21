@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/15/2022 6:49:52 PM"
+    "x-generation-date": "01/20/2022 7:38:14 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7582,8 +7582,53 @@
           "id": {
             "type": "string"
           },
-          "name": {
+          "title": {
             "type": "string"
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "skill_category": {
+                  "type": "string"
+                },
+                "icon": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "order": {
+            "type": "integer",
+            "default": 999
           },
           "localizations": {
             "type": "array",
@@ -7595,8 +7640,17 @@
                 "id": {
                   "type": "string"
                 },
-                "name": {
+                "title": {
                   "type": "string"
+                },
+                "skills": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "order": {
+                  "type": "integer"
                 },
                 "localizations": {
                   "type": "array",
@@ -7630,8 +7684,18 @@
       },
       "NewSkill-category": {
         "properties": {
-          "name": {
+          "title": {
             "type": "string"
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "order": {
+            "type": "integer",
+            "default": 999
           },
           "localizations": {
             "type": "array",
@@ -7657,46 +7721,52 @@
       "Skill": {
         "required": [
           "id",
-          "name"
+          "title"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
+          "title": {
             "type": "string"
           },
-          "skill_categories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "skill_category": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "skills": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "order": {
+                "type": "integer"
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -7772,20 +7842,17 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "title"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "name": {
+                "title": {
                   "type": "string"
                 },
-                "skill_categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "skill_category": {
+                  "type": "string"
                 },
                 "icon": {
                   "type": "string"
@@ -7822,17 +7889,14 @@
       },
       "NewSkill": {
         "required": [
-          "name"
+          "title"
         ],
         "properties": {
-          "name": {
+          "title": {
             "type": "string"
           },
-          "skill_categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "skill_category": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
