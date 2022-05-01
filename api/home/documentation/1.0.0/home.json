@@ -553,7 +553,7 @@
                         }
                       }
                     },
-                    "link_id": {
+                    "link_title": {
                       "type": "string"
                     }
                   },
@@ -577,6 +577,9 @@
                     "auto_scroll": {
                       "type": "boolean",
                       "default": false
+                    },
+                    "link_title": {
+                      "type": "string"
                     }
                   },
                   "required": [
@@ -866,7 +869,7 @@
                         }
                       }
                     },
-                    "link_id": {
+                    "link_title": {
                       "type": "string"
                     }
                   },
@@ -890,6 +893,9 @@
                     "auto_scroll": {
                       "type": "boolean",
                       "default": false
+                    },
+                    "link_title": {
+                      "type": "string"
                     }
                   },
                   "required": [

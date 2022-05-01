@@ -43,7 +43,7 @@
     "action_text": {
       "model": "action-text"
     },
-    "link_id": {
+    "link_title": {
       "type": "string"
     }
   }

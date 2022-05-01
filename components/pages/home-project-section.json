@@ -10,6 +10,9 @@
     "auto_scroll": {
       "type": "boolean",
       "default": false
+    },
+    "link_title": {
+      "type": "string"
     }
   }
 }
